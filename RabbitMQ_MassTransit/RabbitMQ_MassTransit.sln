@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ_MassTransit", "RabbitMQ_MassTransit.csproj", "{E67CF471-C11D-4443-8DCA-0E99572C2B09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ_MassTransit_ProducerAndConsumer", "RabbitMQ_MassTransit_ProducerAndConsumer.csproj", "{E67CF471-C11D-4443-8DCA-0E99572C2B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerQueues", "WorkerQueues", "{15E9D3F1-80E0-49CE-9FF2-F0E2E24E35E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "..\NewTask\NewTask.csproj", "{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "..\Worker\Worker.csproj", "{BFB46D1C-DE91-45E2-9BB7-050518C77D2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{E67CF471-C11D-4443-8DCA-0E99572C2B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E67CF471-C11D-4443-8DCA-0E99572C2B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E67CF471-C11D-4443-8DCA-0E99572C2B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB46D1C-DE91-45E2-9BB7-050518C77D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB46D1C-DE91-45E2-9BB7-050518C77D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB46D1C-DE91-45E2-9BB7-050518C77D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB46D1C-DE91-45E2-9BB7-050518C77D2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FFC59CE-BEB7-4C32-8640-3C1BE6085FF1} = {15E9D3F1-80E0-49CE-9FF2-F0E2E24E35E3}
+		{BFB46D1C-DE91-45E2-9BB7-050518C77D2B} = {15E9D3F1-80E0-49CE-9FF2-F0E2E24E35E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FD964A-BF41-45BF-BC2F-A2FFD975FB6B}
